@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <title>Firewall</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: #284f75;
+    }
+
+    a {
+      color: #284f75;
+      font-size: 15px;
+    }
+
+    .row.content {
+      min-height: 1000px;
+      display: flex;
+    }
+
+    .sidenav {
+      padding-top: 20px;
+      background-color: #dce5ed;
+      height: auto;
+    }
+
+    .col-sm-8 {
+      background-color: white;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #284f75;
+    }
+
+    h2 {
+      color: #284f75;
+    }
+
+    h3 {
+      color: #345f83;
+    }
+
+    p, li {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 5px;
+    }
+
+    .sidenav img {
+      max-width: 180px;
+    }
+
+    .well {
+      background-color: #edf3f8;
+    }
+
+    footer {
+      background-color: #284f75;
+      color: white;
+      padding: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+      .row.content {
+        display: block;
+      }
+
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="#">FIREWALL</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Početna</a></li>
+        <li><a href="#sta">Firewall</a></li>
+        <li><a href="#kako">Kako radi?</a></li>
+        <li><a href="#vrste">Vrste</a></li>
+        <li><a href="#mreze">LAN, MAN i WAN</a></li>
+        <li><a href="#zakljucak">Zaključak</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+
+    <!-- LIJEVA KOLONA -->
+    <div class="col-sm-2 sidenav">
+
+      <h3>Korisni linkovi</h3>
+
+      <p>
+        <a href="https://bs.wikipedia.org/wiki/Vatrozid" target="_blank">Više o firewallu</a>
+      </p>
+
+      <p>
+        <a href="https://www.microsoft.com/en-us/windows" target="_blank">Windows sigurnost</a>
+      </p>
+
+      <p>
+        <a href="https://www.youtube.com/results?search_query=what+is+a+firewall" target="_blank">Video o firewallu</a>
+      </p>
+
+      <h3>Jeste li znali?</h3>
+
+      <p>Firewall na engleskom jeziku znači zaštitni zid.</p>
+
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500" alt="Elektronski dijelovi računara">
+
+      <h3>Zašto nam treba?</h3>
+
+      <p>Firewall pomaže da naši računari budu sigurniji tokom korištenja interneta.</p>
+
+      <h3>Primjena</h3>
+
+      <p>Firewall se koristi u kućama, školama, poslovnim prostorima i velikim kompanijama.</p>
+
+      <h3>Mali savjet</h3>
+
+      <p>Uvijek provjerite da li je zaštitni zid uključen na vašem računaru.</p>
+
+    </div>
+
+    <!-- SREDNJA KOLONA -->
+    <div class="col-sm-8 text-left">
+
+      <h1 id="sta">Firewall – zaštita računara i mreže</h1>
+
+      <p>
+        Firewall ili zaštitni zid je sigurnosni sistem koji štiti računar i računarsku mrežu od neovlaštenog pristupa. Njegov zadatak je da kontroliše podatke koji dolaze sa interneta i odlaze prema internetu.
+      </p>
+
+      <p>
+        Pomoću firewalla možemo spriječiti određene neželjene veze i smanjiti mogućnost napada na računar.
+      </p>
+
+      <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=900" alt="Digitalna sigurnost">
+
+      <h2 id="kako">Kako firewall radi?</h2>
+
+      <p>
+        Firewall prati internet saobraćaj i provjerava da li su veze sigurne. Ako prepozna sumnjivu vezu, može je blokirati kako bi zaštitio računar.
+      </p>
+
+      <p>Njegovi glavni zadaci su:</p>
+
+      <ul>
+        <li>Kontroliše internet saobraćaj.</li>
+        <li>Blokira sumnjive veze.</li>
+        <li>Štiti podatke na računaru.</li>
+        <li>Sprečava neovlašten pristup.</li>
+      </ul>
+
+      <p><b>Zanimljivost:</b> Firewall može biti podešen tako da dozvoljava samo određene vrste internet saobraćaja.</p>
+
+      <h2 id="vrste">Vrste firewalla</h2>
+
+      <h3>1. Softverski firewall</h3>
+      <p>
+        To je program koji se instalira na računar i štiti ga od neželjenih veza. Primjer je Windows Defender Firewall.
+      </p>
+
+      <h3>2. Hardverski firewall</h3>
+      <p>
+        To je poseban uređaj koji se najčešće nalazi između računarske mreže i interneta. Koristi se u kućama, školama i firmama.
+      </p>
+
+      <h3>3. Mrežni firewall</h3>
+      <p>
+        Štiti više računara koji su povezani u jednu mrežu i kontroliše njihov internet saobraćaj.
+      </p>
+
+      <h3>4. Firewall u oblaku</h3>
+      <p>
+        Ova vrsta zaštite koristi internet i udaljene servere kako bi zaštitila podatke i mreže.
+      </p>
+
+      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900" alt="Mrežni serveri">
+
+      <h2 id="mreze">Računarske mreže LAN, MAN i WAN</h2>
+
+      <p>
+        Računarske mreže omogućavaju povezivanje računara i razmjenu podataka. Dijele se prema području koje obuhvataju.
+      </p>
+
+      <h3>LAN – Local Area Network</h3>
+      <p>
+        LAN je lokalna računarska mreža koja povezuje uređaje na manjem prostoru, kao što su kuća, škola ili kancelarija.
+      </p>
+
+      <h3>MAN – Metropolitan Area Network</h3>
+      <p>
+        MAN je gradska mreža koja povezuje više manjih mreža na području jednog grada.
+      </p>
+
+      <h3>WAN – Wide Area Network</h3>
+      <p>
+        WAN je široka računarska mreža koja povezuje uređaje i mreže na velikim udaljenostima. Najpoznatiji primjer je internet.
+      </p>
+
+      <img src="https://media.licdn.com/dms/image/v2/C4D12AQF1VNs5oJD8uQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1614211759270?e=2147483647&v=beta&t=3YnH5OH-d0-RBk6E1gG5ATSwawPakkT2D-QNX2_dJZQ">
+
+      <h2>Zašto je firewall važan?</h2>
+
+      <p>
+        Firewall je važan jer pomaže u zaštiti računara i ličnih podataka. Bez odgovarajuće zaštite računar može biti izložen različitim sigurnosnim prijetnjama.
+      </p>
+
+      <ul>
+        <li>Čuva privatnost korisnika.</li>
+        <li>Štiti računar od neovlaštenog pristupa.</li>
+        <li>Kontroliše programe koji koriste internet.</li>
+        <li>Pomaže u zaštiti računarske mreže.</li>
+      </ul>
+
+      <p><b>Važno:</b> Firewall je najbolje koristiti zajedno s antivirusnim programom i redovnim ažuriranjem računara.</p>
+
+      <h2 id="zakljucak">Zaključak</h2>
+
+      <p>
+        Firewall predstavlja važan dio zaštite računara i mreže. On kontroliše internet saobraćaj i pomaže u sprečavanju neovlaštenog pristupa. Zbog toga je važno da svaki računar ima uključenu odgovarajuću zaštitu.
+      </p>
+
+      <h3>Hvala na pažnji!</h3>
+
+    </div>
+
+    <!-- DESNA KOLONA -->
+    <div class="col-sm-2 sidenav">
+
+      <div class="well">
+        <h3>Informacije</h3>
+        <p>Firewall je važan dio računarske sigurnosti.</p>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500" alt="Računar i tehnologija">
+
+      <div class="well">
+        <h3>Savjet</h3>
+        <p>Uvijek ažurirajte računar i koristite sigurnosne programe.</p>
+      </div>
+
+      <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500" alt="Zaštita podataka">
+
+      <div class="well">
+        <h3>Sigurnost</h3>
+        <p>Ne otvarajte sumnjive linkove i ne preuzimajte nepoznate datoteke.</p>
+      </div>
+
+      <h3>Zaštita podataka</h3>
+
+      <p>Ne dijelite svoje lozinke i lične podatke s nepoznatim osobama.</p>
+
+      <h3>Internet sigurnost</h3>
+
+      <p>Prilikom korištenja interneta birajte sigurne stranice i pazite na sumnjive poruke.</p>
+
+      <h3>Zapamtite</h3>
+
+      <p>Sigurnost računara zavisi i od naših navika na internetu.</p>
+
+    </div>
+
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>
+    Firewall - Školski projekat iz informatike<br>
+    Izradila Lejla Čiko<br>
+  <br>
+JU Srednja ekonomska škola, Sarajevo
+  </p>
+</footer>
+
+</body>
+</html>
